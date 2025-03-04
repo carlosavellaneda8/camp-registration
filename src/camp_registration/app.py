@@ -29,7 +29,7 @@ if check_button:
 
     if id_exists:
         st.write(REGISTERED_TEXT)
-        webbrowser.open(url=PAYMENT_FORM, new=0)
+        webbrowser.open(url=PAYMENT_FORM)
     else:
         st.session_state.form_shown = True
 
