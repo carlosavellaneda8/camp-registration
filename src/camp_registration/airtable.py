@@ -44,19 +44,3 @@ def check_id_exists(
     id_list = [record["fields"]["Número de documento"] for record in all_records]
     id_set = set(id_list)
     return id_number in id_set
-
-
-def create_person_record(person_info: Person) -> dict:
-    table = api.table(
-        st.secrets["airtable"]["base_id"],
-        st.secrets["airtable"]["id_table"],
-    )
-    try:
-        table.create(person_info.dict())
-        return {"status": "ok"}
-    except Exception as e:
-        return {"status": f"error: {e}"}
-
-
-def create_payment_record(payment_info: Payment) -> dict:
-    pass
