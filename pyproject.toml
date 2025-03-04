@@ -19,3 +19,8 @@ camp-registration = "camp_registration:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+test = [
+    "mypy>=1.15.0",
+]
