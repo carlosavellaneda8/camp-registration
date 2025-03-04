@@ -51,7 +51,6 @@ def create_person_record(person_info: Person) -> dict:
         st.secrets["airtable"]["base_id"],
         st.secrets["airtable"]["id_table"],
     )
-    breakpoint()table_id
     try:
         table.create(person_info.dict())
         return {"status": "ok"}
