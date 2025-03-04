@@ -7,4 +7,4 @@ WORKDIR /app
 RUN uv sync --frozen
 
 EXPOSE 8501
-ENTRYPOINT ["uv", "run", "streamlit", "run", "src/camp_registration/app.py", "--server.port=8501", "--server.address=0.0.0.0]
+ENTRYPOINT ["uv", "run", "streamlit", "run", "src/camp_registration/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
