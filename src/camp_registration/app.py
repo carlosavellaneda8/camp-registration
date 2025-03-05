@@ -24,7 +24,7 @@ with st.form("id_form"):
         value=st.session_state.id_number,
         key='id_number_form',
     )
-    check_button = st.form_submit_button("Check ID")
+    check_button = st.form_submit_button("Consultar")
 
 if check_button:
     st.session_state.id_number = id_number
