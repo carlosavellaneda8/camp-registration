@@ -10,6 +10,7 @@ from camp_registration.utils import (
 )
 
 
+st.image("src/camp_registration/assets/logo_life_of_legends.jpeg")
 st.title("Life Of Legends - Retiro TB 2025")
 
 # Initialize session state variables if they do not exist
