@@ -1,11 +1,11 @@
 """Constants and formatting helper function"""
 
-PAYMENT_FORM = "https://airtable.com/embed/appX6rFINfrR0vPSI/shrng3slIs06vrox2"
+PAYMENT_FORM = "https://app.ilbd.org:8080/Eventos/form"
 PERSON_FORM = "https://airtable.com/embed/appX6rFINfrR0vPSI/shroMlTuqwoXYiZ93"
 REGISTERED_TEXT = """
 ### ¡Ya estás registrado!
 
-A continuación aparecerá el formulario para que cargues el comprobante de tu abono
+Haz clic en el botón a continuación para registrar un nuevo abono
 """
 UNREGISTERED_TEXT = """
 ### Completa el siguiente formulario

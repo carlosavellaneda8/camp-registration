@@ -32,7 +32,7 @@ if check_button:
 
     if id_exists:
         st.write(REGISTERED_TEXT)
-        components.html(format_embed_url(PAYMENT_FORM), height=533)
+        st.link_button("Registra tu abono", PAYMENT_FORM)
     else:
         st.session_state.form_shown = True
 
